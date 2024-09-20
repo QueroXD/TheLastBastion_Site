@@ -1,0 +1,21 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.SlidderMenu {
+    display: flex;
+    justify-content: space-between; /* Esto coloca los elementos en los extremos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 1em;
+    background-color: grey;
+    color: white;
+}
+
+/* Estilo del párrafo donde se muestra la fecha */
+#fecha {
+    font-size: 24px;
+    font-weight: bold;
+}
