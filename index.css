@@ -1,4 +1,11 @@
 /* Estilos para el cuerpo de la página */
+@font-face {
+    font-family: 'FuentePixelArt'; /* Nombre personalizado para la fuente */
+    src: url('Fuentes/back-to-1982.regular.ttf') format('truetype'); /* Ruta y formato del archivo .ttf */
+    font-weight: normal;  /* Puedes ajustar el peso (normal, bold, etc.) */
+    font-style: normal;   /* Cambia a italic si necesitas */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,6 +23,6 @@ body {
 
 /* Estilo del párrafo donde se muestra la fecha */
 #fecha {
+    font-family: 'FuentePixelArt', sans-serif;
     font-size: 24px;
-    font-weight: bold;
 }

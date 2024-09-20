@@ -7,7 +7,13 @@ function mostrarFecha() {
     let diaActual = fechaActual.getDate();
     let mesActual = fechaActual.getMonth() + 1; // Los meses empiezan en 0
     let añoActual = fechaActual.getFullYear();
-
+    
+    if (diaActual < 10) {
+        diaActual = '0' + diaActual;
+    }
+    if (mesActual < 10) {
+        mesActual = '0' + mesActual;
+    }
     // Mostrar la fecha en el elemento con id="fecha"
     document.getElementById('fecha').innerText = `Fecha: ${diaActual}/${mesActual}/${añoActual}`;
 }
