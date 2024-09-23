@@ -1,9 +1,13 @@
 /* Estilos para el cuerpo de la página */
 @font-face {
     font-family: 'FuentePixelArt'; /* Nombre personalizado para la fuente */
-    src: url('Fuentes/back-to-1982.regular.ttf') format('truetype'); /* Ruta y formato del archivo .ttf */
+    src: url('Fuentes/dogicapixel.ttf') format('truetype'); /* Ruta y formato del archivo .ttf */
     font-weight: normal;  /* Puedes ajustar el peso (normal, bold, etc.) */
     font-style: normal;   /* Cambia a italic si necesitas */
+}
+
+#LogoTopSite{
+    width: 20em;
 }
 
 body {
@@ -24,5 +28,49 @@ body {
 /* Estilo del párrafo donde se muestra la fecha */
 #fecha {
     font-family: 'FuentePixelArt', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
+}
+
+.Slidder {
+    font-family: 'FuentePixelArt', sans-serif;
+    background-color: bisque;
+    display: flex;  
+
+}
+
+/* CSS del Botón */
+#btDescargar {
+    background-color: #4CAF50;
+    color: white;   
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-family: 'FuentePixelArt', sans-serif;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover para el botón */
+#btDescargar:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 0.4em 0.6em rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto activo cuando se presiona el botón */
+#btDescargar:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
+    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.2);
+}
+
+.SlidderApartados {
+    width: 50%;
+    height: 100%;
+  }
+
+.CajaDescargar {
+    width: 50%;
+    height: 100%;
 }
