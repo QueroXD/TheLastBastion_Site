@@ -18,8 +18,7 @@ body {
 
 .SlidderMenu {
     display: flex;
-    justify-content: space-between; /* Esto coloca los elementos en los extremos */
-    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; 
     padding: 1em;
     background-color: grey;
     color: white;
@@ -35,7 +34,8 @@ body {
     font-family: 'FuentePixelArt', sans-serif;
     background-color: bisque;
     display: flex;  
-
+    align-items: center; 
+    justify-content: center; /* Centra horizontalmente */
 }
 
 /* CSS del Botón */
@@ -49,6 +49,13 @@ body {
     border-radius: 0.5em;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Logo Windows XP */
+
+#LogoXP {
+    width: 20%;
+    height: 20%;
 }
 
 /* Efecto hover para el botón */
