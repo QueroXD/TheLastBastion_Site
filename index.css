@@ -73,8 +73,8 @@ body {
   }
 
 .SlidderApartados p {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    margin-top: 6em;
+    margin-bottom: 6em;
 }
 
 .CajaDescargar {
@@ -104,4 +104,9 @@ body {
 
 #QuienesSomos {
     padding-bottom: 4em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
