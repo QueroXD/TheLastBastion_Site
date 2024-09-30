@@ -20,8 +20,19 @@ body {
     display: flex;
     justify-content: space-between; 
     padding: 1em;
-    background-color: grey;
+    position: relative; 
+    background: linear-gradient(45deg, #8D2D5D, #CB625C, #AF5151, #DE8366);
     color: white;
+}
+
+.SlidderMenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(119, 91, 78, 0.33); /* #775B4E con 33% de opacidad */
 }
 
 /* Estilo del párrafo donde se muestra la fecha */
@@ -78,7 +89,7 @@ body {
 }
 
 .CajaDescargar {
-    width: 50%;
+    width: 50%; 
     height: 100%;
 }
 
@@ -86,6 +97,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    border-radius: 0.7em;
 }
 
 #LogoXP {
