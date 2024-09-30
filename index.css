@@ -52,6 +52,9 @@ body {
 .Slidder {
     font-family: 'FuentePixelArt', sans-serif;
     background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;  
     align-items: center; 
     justify-content: center; /* Centra horizontalmente */
@@ -60,6 +63,7 @@ body {
 
 /* CSS del Botón */
 #btDescargar {
+    position: relative;
     background-color: #4CAF50;
     color: white;   
     border: none;
@@ -99,21 +103,34 @@ body {
 .CajaDescargar {
     width: 50%; 
     height: 100%;
+    position: relative;
 }
 
 .DescargarContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    border-radius: 1.5em;
+    position: relative;
     padding: 1em;
-    opacity: 0.33;
+    border-radius: 1.5em;
+    z-index: 1; /* Esto garantiza que el contenido esté encima del fondo */
+}
+
+.DescargarBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.33); /* Blanco con opacidad */
+    border-radius: 1.5em;
+    z-index: 0; /* El fondo estará detrás del contenido */
 }
 
 #LogoXP {
     width: 50%;
     margin-bottom: 0.5em;
+    position: relative;
 }
 
 .ContenidoMecanica{
