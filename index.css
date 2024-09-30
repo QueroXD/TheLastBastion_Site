@@ -43,7 +43,7 @@ body {
 
 .Slidder {
     font-family: 'FuentePixelArt', sans-serif;
-    background-color: bisque;
+    background-image: url("./img/background.jpg");
     display: flex;  
     align-items: center; 
     justify-content: center; /* Centra horizontalmente */
@@ -98,12 +98,15 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border-radius: 0.7em;
+    border-radius: 1.5em;
+    padding: 1em;
+    opacity: 0.33;
 }
 
 #LogoXP {
-    width: 35%;
+    width: 50%;
     margin-bottom: 0.5em;
+    position: relative;
 }
 
 /* Provisonal */
