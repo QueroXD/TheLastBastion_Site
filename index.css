@@ -114,7 +114,16 @@ body {
 #LogoXP {
     width: 50%;
     margin-bottom: 0.5em;
-    position: relative;
+}
+
+.ContenidoMecanica{
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+}
+
+.ContenidoMecanica img {
+    justify-content: center;
 }
 
 /* Provisonal */
