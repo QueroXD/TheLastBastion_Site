@@ -35,10 +35,17 @@ body {
     background-color: rgba(119, 91, 78, 0.33); /* #775B4E con 33% de opacidad */
 }
 
-/* Estilo del párrafo donde se muestra la fecha */
+/*Hacer que no le aplique el difuminado a la foto del logo*/
+#LogoTopSite {
+    position: relative; 
+    z-index: 2; 
+}
+
 #fecha {
     font-family: 'FuentePixelArt', sans-serif;
     font-size: 1.5em;
+    position: relative;
+    z-index: 1; /
 }
 
 .Slidder {
