@@ -1,30 +1,41 @@
-/* Estilos para el cuerpo de la página */
+/* Definición de fuente personalizada */
 @font-face {
-    font-family: 'FuentePixelArt'; /* Nombre personalizado para la fuente */
-    src: url('Fuentes/dogicapixel.ttf') format('truetype'); /* Ruta y formato del archivo .ttf */
-    font-weight: normal;  /* Puedes ajustar el peso (normal, bold, etc.) */
-    font-style: normal;   /* Cambia a italic si necesitas */
+    font-family: 'FuentePixelArt';
+    src: url('Fuentes/dogicapixel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#LogoTopSite{
-    width: 20em;
-}
-
-body {
-    font-family: Arial, sans-serif;
+/* Reseteo de márgenes y padding */
+* {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    margin: 1em;
+}
+
+/* Estilos para el logo principal */
+#LogoTopSite {
+    width: 20em;
+    position: relative;
+    z-index: 2; /* Garantiza que esté encima de otros elementos */
+}
+
+/* Estilos del menú superior */
 .SlidderMenu {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 1em;
-    position: relative; 
+    position: relative;
     background: linear-gradient(45deg, #8D2D5D, #CB625C, #AF5151, #DE8366);
     color: white;
 }
-
 
 .SlidderMenu::before {
     content: '';
@@ -33,15 +44,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(119, 91, 78, 0.33); /* #775B4E con 33% de opacidad */
+    background-color: rgba(119, 91, 78, 0.33); /* Fondo con opacidad */
 }
 
-/*Hacer que no le aplique el difuminado a la foto del logo*/
-#LogoTopSite {
-    position: relative; 
-    z-index: 2; 
-}
-
+/* Estilos para la fecha */
 #fecha {
     font-family: 'FuentePixelArt', sans-serif;
     text-shadow: 0px 23px 20px black;
@@ -50,23 +56,20 @@ body {
     z-index: 1;
 }
 
+/* Estilos del slider */
 .Slidder {
     font-family: 'FuentePixelArt', sans-serif;
-    background-image: url("./img/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;  
-    align-items: center; 
-    justify-content: center; /* Centra horizontalmente */
-    
+    background: url("./img/background.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* CSS del Botón */
+/* Estilos para el botón de descarga */
 #btDescargar {
     position: relative;
     background-color: #4CAF50;
-    color: white;   
+    color: white;
     border: none;
     padding: 1em 2em;
     font-size: 1em;
@@ -76,33 +79,31 @@ body {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Efecto hover para el botón */
 #btDescargar:hover {
     background-color: #45a049;
     transform: translateY(-2px);
     box-shadow: 0 0.4em 0.6em rgba(0, 0, 0, 0.15);
 }
 
-/* Efecto activo cuando se presiona el botón */
 #btDescargar:active {
     background-color: #3e8e41;
     transform: translateY(1px);
     box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos de la sección SlidderApartados */
 .SlidderApartados {
     width: 50%;
     height: 100%;
-    
-  }
-
-.SlidderApartados p {
-    margin-top: 6em;
-    margin-bottom: 6em;
 }
 
+.SlidderApartados p {
+    margin: 6em 0;
+}
+
+/* Caja de descarga */
 .CajaDescargar {
-    width: 50%; 
+    width: 50%;
     height: 100%;
     position: relative;
 }
@@ -111,57 +112,125 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     padding: 1em;
     border-radius: 1.5em;
-    z-index: 1; /* Esto garantiza que el contenido esté encima del fondo */
+    z-index: 1;
     background-color: rgba(255, 255, 255, 0.33);
 }
 
-
-/* .DescargarBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.33);
-    border-radius: 1.5em;
-    z-index: 0;
-} */
-
+/* Estilos del logo XP */
 #LogoXP {
     width: 50%;
     margin-bottom: 0.5em;
     position: relative;
 }
 
-.ContenidoMecanica{
-    display: flex;  
-    align-items: center; 
+/* Estilos de contenido principal */
+.ContenidoMain {
+    margin: 0 12em;
+}
+
+.ContenidoMecanica {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 4em;
 }
 
 .ContenidoMecanica img {
     justify-content: center;
 }
 
-/* Provisonal */
-#Sinopsis {
-    padding-bottom: 4em;
-}
-
-#Contacto {
-    padding-bottom: 4em;
-}
-
-#QuienesSomos {
-    padding-bottom: 4em;
-}
-
+/* Enlaces */
 a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     text-shadow: 0.125em 0.125em 0.3125em black;
+}
+
+/* Sección Mecánica */
+.Mecanica {
+    padding: 0 4em;
+}
+
+.Mecanica h2 {
+    padding: 1em 0;
+}
+
+/* Títulos */
+#TituloMecanica {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* Sección "Quiénes Somos" */
+#QuienesSomos, #Contacto {
+    margin: 0 auto 4em;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+#QuienesSomos h1, #Contacto h1 {
+    padding: 0.5em;
+}
+
+#Sinopsis {
+    margin: 4em 0;
+}
+
+#Sinopsis h1 {
+    padding-bottom: 0.5em;
+}
+
+/* Contenido de "Quiénes Somos" */
+#contenidoQuienesSomos {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#contenidoQuienesSomos img {
+    max-width: 40%;
+    height: auto;
+}
+
+#contenidoQuienesSomos .texto {
+    max-width: 60%;
+}
+
+/* Contenido de "Contacto" */
+#contenidoContacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+#contenidoContacto img {
+    max-width: 40%;
+    height: auto;
+}
+
+#contenidoContacto .texto {
+    max-width: 70%;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    #contenidoQuienesSomos, #contenidoContacto {
+        flex-direction: column;
+    }
+
+    #contenidoQuienesSomos img, 
+    #contenidoQuienesSomos .texto,
+    #contenidoContacto img,
+    #contenidoContacto .texto {
+        max-width: 100%;
+    }
+}
+
+/* Imagen motor */
+#FotoMotor {
+    width: 100%;
 }
