@@ -57,12 +57,31 @@ main {
 }
 
 /* Estilos del slider */
-.Slidder {
+/* .Slidder {
     font-family: 'FuentePixelArt', sans-serif;
     background: url("./img/background.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.Slidder {
+    font-family: 'FuentePixelArt', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#videoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Estilos para el botón de descarga */
@@ -216,21 +235,83 @@ a {
     max-width: 70%;
 }
 
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-    #contenidoQuienesSomos, #contenidoContacto {
-        flex-direction: column;
-    }
-
-    #contenidoQuienesSomos img, 
-    #contenidoQuienesSomos .texto,
-    #contenidoContacto img,
-    #contenidoContacto .texto {
-        max-width: 100%;
-    }
-}
-
 /* Imagen motor */
 #FotoMotor {
     width: 100%;
 }
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.ContenidoMain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#Sinopsis h1, #QuienesSomos h1, #TituloMecanica {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#Sinopsis p, #QuienesSomos .texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.ContenidoMecanica {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.Mecanica {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.Mecanica h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.Mecanica p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+.Mecanica img {
+    max-width: 100%;
+    height: auto;
+}
+
+#contenidoQuienesSomos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#contenidoQuienesSomos img {
+    max-width: 40%;
+    height: auto;
+}
+
+#contenidoQuienesSomos .texto {
+    max-width: 60%;
+}
+
+#contenidoQuienesSomos .texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
