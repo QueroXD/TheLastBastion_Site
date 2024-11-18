@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'DogiCaPixel';
+    src: url('../fonts/dogicapixelbold.ttf') format('truetype');
+}
+
+body {
+    background-color: #0D0D0D;
+    color: #F2836B; /* Light orange for general text */
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
+
+h1, h2 {
+    color: #BF3952; /* Darker red for headings */
+}
+
+.custom-title {
+    font-family: 'DogiCaPixel', sans-serif;
+    color: #D96459; /* Lighter red for titles */
+}
+
+.hero {
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+}
+
+h2 {
+    color: #BF3952; /* Darker red for section headings */
+}
+
+.btn-danger {
+    background-color: #F2836B; /* Light orange for buttons */
+    border-color: #BF3952; /* Darker red for button border */
+}
+
+#clock {
+    font-family: 'DogiCaPixel', sans-serif;
+    font-size: 1.2rem;
+    color: #F2A07B; /* Suave contraste con el fondo */
+    margin-right: 20px;
+}
+
+#snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Detrás del contenido */
+}
+.hero .container {
+    position: relative;
+    z-index: 2; /* Sobre las partículas */
+}
+
+.discord-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.discord-logo {
+    width: 100px;
+    height: auto;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.discord-info {
+    text-align: center;
+}
+
+.discord-chat {
+    border: 2px solid #F2836B;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-discord {
+    background-color: #5865F2;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-discord:hover {
+    background-color: #404EED;
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+footer {
+    background-color: #8C354C; /* Oscuro con tono rojo */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+
+

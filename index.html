@@ -3,75 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Last Bastion</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Your Game Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="shortcut icon" href="./img/LastBastion_Icon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="SlidderMenu"> 
-            <img id="LogoTopSite" src="./img/LastBastion_Logo.png" alt="Nombre Juego">
-            <p id="fecha"></p> <!-- Aquí se mostrará la fecha -->     
-        </div>
-        <div class="Slidder">
-            <video id="videoFondo" autoplay loop muted>
-                <source src="./img/fondo.mp4" type="video/mp4">
-            </video>
-            <div> 
-                <img id="logoBander" src="./img/LastBastion_Icon.png" alt="LogoBandera">   
-            </div>    
-            <div class="SlidderApartados"> 
-                <a href="#Sinopsis"><p> &#45;&gt; SINOPSIS</p></a>
-                <a href="#Contacto"><p> &#45;&gt; CONTACTO</p></a>
-                <a href="#QuienesSomos"><p> &#45;&gt; QUIENES SOMOS</p></a>
-            </div>
-            <div id="CajaDescargar"> 
-                <div class="DescargarContent"> 
-                    <div class="DescargarBackground"></div>
-                    <img id="LogoXP" src="./img/Logo_WindowsXP.png" alt="LogoWindowsXP">   
-                    <button id="btDescargar"><a href="https://mega.nz/folder/C8NxxB7A#t1uitjbK0syjUMVYqnVRHQ" target="_blank">DESCARGAR</a></button>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #BF3952;">
+        <a class="navbar-brand" href="#">
+            <img src="./img/LastBastion_Icon.png" alt="Game Icon" class="icon">
+        </a>
+        <div id="clock" class="ml-auto text-white"></div>
+    </nav>
+
+    <header class="hero">
+        <canvas id="snow"></canvas>
+        <div class="container text-center">
+            <img src="./img/LastBastion_Logo.png" alt="Game Title Image" class="img-fluid">
         </div>
     </header>
-    <main>
-        <div class="ContenidoMain">
-            <section id="Sinopsis">
-                <h1>SINOPSIS</h1>
-                <p>Lorem ipsum dolor sit amet...</p>
-            </section>
-            
-            <h1 id="TituloMecanica">MECANICAS</h1>
-            <div class="ContenidoMecanica">
-                <div class="Mecanica">
-                    <img src="./img/SnowWarriors.png" alt="ImagenMecanica1">
-                    <h2>Mecanica1</h2>
-                    <p>Phasellus venenatis diam...</p>
+
+    <section id="about" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="custom-title">Sobre el Juego</h2>
+            <p>Embárcate en una aventura épica en un mundo pixelado lleno de magia, misterios, y enemigos formidables. Construye tu fortaleza, explora islas desoladas, y forja alianzas en un entorno helado.</p>
+            <p>En *Last Bastion*, cada decisión importa. ¿Serás capaz de sobrevivir y prosperar en un mundo en constante cambio?</p>
+        </div>
+    </section>    
+
+    <section id="features" class="py-5">
+        <div class="container text-center">
+            <h2 class="custom-title">Características Principales</h2>
+            <ul class="list-unstyled">
+                <li>✔ Construcción y personalización de tu isla</li>
+                <li>✔ Batallas estratégicas en tiempo real</li>
+                <li>✔ Un lore profundo y envolvente</li>
+                <li>✔ Gráficos retro en estilo pixel art</li>
+                <li>✔ Comunidad activa con eventos y desafíos</li>
+            </ul>
+            <p class="mt-4">¡Estamos emocionados de traer esta experiencia única al mundo gamer! Mantente al tanto para más actualizaciones.</p>
+        </div>
+    </section>
+
+    <section id="community" class="bg-dark text-white py-5 text-center">
+        <div class="container">
+            <h2 class="custom-title">Únete a nuestra Comunidad</h2>
+            <p>¡Sé parte de nuestra creciente comunidad en Discord! Comparte ideas, conoce a otros jugadores, y participa en eventos especiales.</p>
+            <div class="discord-section">
+                <div class="discord-info">
+                    <img src="./img/discord-log.png" alt="Discord Logo" class="discord-logo">
+                    <p class="mt-3">Haz clic en el botón para unirte al servidor oficial de nuestro juego.</p>
+                    <a href="https://discord.gg/arJsyYpzVY" target="_blank" class="btn btn-discord">Únete ahora</a>
                 </div>
-                <div class="Mecanica">
-                    <img src="./img/FondoNegro.png" alt="ImagenMecanica2">
-                    <h2>Mecanica2</h2>
-                    <p>Phasellus venenatis diam...</p>
-                </div>
-                <div class="Mecanica">
-                    <img src="./img/FondoNegro.png" alt="ImagenMecanica3">
-                    <h2>Mecanica3</h2>
-                    <p>Phasellus venenatis diam...</p>
+                <div class="discord-chat">
+                    <iframe 
+                        src="https://discord.com/widget?id=1285279032522313808&theme=dark" 
+                        width="350" 
+                        height="500" 
+                        allowtransparency="true" 
+                        frameborder="0" 
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                    </iframe>
                 </div>
             </div>
-            <section id="QuienesSomos">
-                <h1>QUIENES SOMOS</h1>
-                <div id="contenidoQuienesSomos">
-                    <img src="./img/FondoNegro.png" alt="Imagen de quienes somos">
-                    <div class="texto">
-                        <p>Lorem ipsum dolor sit amet...</p>
-                    </div>
-                </div>
-            </section>
         </div>
-    </main>
-    <footer>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="container">
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="social-links">
+                <a href="#" target="_blank" class="social-icon"><img src="./img/x-icon.png" alt="X"></a>
+                <a href="#" target="_blank" class="social-icon"><img src="./img/youtube-icon.png" alt="Youtube"></a>
+                <a href="#" target="_blank" class="social-icon"><img src="./img/instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p class="mt-3">&copy; 2024 The Last Bastion. Todos los derechos reservados.</p>
+        </div>
     </footer>
-    <script src="./index.js"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
