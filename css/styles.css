@@ -181,6 +181,13 @@ footer {
     display: block; /* Asegura que las imágenes se comporten como elementos de bloque */
 }
 
+.mecanica-img video {
+    max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0 auto; /* Centra las imágenes */
+    display: block; /* Asegura que las imágenes se comporten como elementos de bloque */
+}
+
 /* Animaciones */
 @keyframes pulse {
     0%, 100% {
@@ -192,3 +199,67 @@ footer {
         opacity: 0.8;
     }
 }
+
+/* Paginado */
+#lore-content {
+    background-image: url('../img/PergaminoFondo.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    padding: 40px; /* Padding general aumentado (el doble) */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+  
+    width: 100%; /* El contenedor ocupa todo el espacio disponible */
+    max-width: 1000px; /* Límite máximo de ancho */
+    height: 500px; /* Altura fija para el contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
+    color: #000; /* Color del texto negro */
+  
+    text-align: left; /* Centra el texto */
+    padding-left: 120px;  /* Aumentado a 100px para más espacio a la izquierda */
+    padding-right: 100px; /* Aumentado a 100px para más espacio a la derecha */
+    padding-top: 80px;   /* Aumentado a 80px para más espacio superior */
+    padding-bottom: 80px; /* Aumentado a 80px para más espacio inferior */
+    overflow-y: auto; /* Permite que el contenido sea desplazable si es más largo que el contenedor */
+  }
+  
+  .lore-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .lore-controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .lore-controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .lore-controls button:not(:disabled) {
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  .lore-controls button:not(:disabled):hover {
+    background-color: #0056b3;
+  }
+  
+  #lore-page-number {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  

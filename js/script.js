@@ -70,3 +70,63 @@ window.addEventListener('resize', () => {
     snowflakes = [];
     createSnowflakes();
 });
+
+// Paginado
+// Variables de estado
+let loreCurrentPage = 1;
+
+// Selección de elementos específicos
+const loreContentDiv = document.getElementById('lore-content');
+const lorePrevButton = document.getElementById('lore-prev');
+const loreNextButton = document.getElementById('lore-next');
+const lorePageNumberSpan = document.getElementById('lore-page-number');
+
+// Función para cargar contenido de una página
+function loadLorePage(page) {
+  fetch(`./Notes/${page}.txt`) // Ruta ajustada a ./Notes
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Página ${page} no encontrada`);
+      }
+      return response.text();
+    })
+    .then(data => {
+      loreContentDiv.textContent = data;
+      loreCurrentPage = page;
+      lorePageNumberSpan.textContent = `Página ${loreCurrentPage}`;
+      updateLoreButtons();
+    })
+    .catch(error => {
+      loreContentDiv.textContent = 'No se puede cargar el contenido.';
+      console.error(error);
+    });
+}
+
+// Función para actualizar el estado de los botones
+function updateLoreButtons() {
+  lorePrevButton.disabled = loreCurrentPage === 1;
+  loreNextButton.disabled = false; // Por defecto habilitamos el botón "Siguiente"
+
+  // Verificar si la próxima página existe
+  fetch(`./Notes/${loreCurrentPage + 1}.txt`) // Ruta ajustada a ./Notes
+    .then(response => {
+      loreNextButton.disabled = !response.ok;
+    })
+    .catch(() => {
+      loreNextButton.disabled = true;
+    });
+}
+
+// Eventos de los botones
+lorePrevButton.addEventListener('click', () => {
+  if (loreCurrentPage > 1) {
+    loadLorePage(loreCurrentPage - 1);
+  }
+});
+
+loreNextButton.addEventListener('click', () => {
+  loadLorePage(loreCurrentPage + 1);
+});
+
+// Cargar la primera página al iniciar
+loadLorePage(1);
