@@ -134,6 +134,53 @@ footer {
     transform: scale(1.2);
 }
 
+#Mecanica-container {
+    padding-top: 4%;
+}
+
+#Mecanica-title {
+    padding-bottom: 3%;
+}
+
+.mecanica-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mecanica-text {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+.mecanica-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mecanica-text p {
+    font-size: 16px;
+    text-align: left;
+    color: #a7a3a3;
+}
+
+.mecanica-img {
+    flex: 1;
+    text-align: center; /* Centra horizontalmente los elementos internos */
+}
+
+.mecanica-img img {
+    max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 0 auto; /* Centra las imágenes */
+    display: block; /* Asegura que las imágenes se comporten como elementos de bloque */
+}
+
 /* Animaciones */
 @keyframes pulse {
     0%, 100% {
