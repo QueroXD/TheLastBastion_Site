@@ -263,3 +263,26 @@ footer {
     font-weight: bold;
   }
   
+/* Estilos para la descarga integrada */
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.download-img {
+    width: 120px;
+    height: auto;
+}
+
+.discord-info .btn-danger {
+    font-family: 'DogiCaPixel', sans-serif;
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.discord-info .btn-danger:hover {
+    background-color: #BF3952;
+}
