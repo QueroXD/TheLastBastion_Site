@@ -4,17 +4,18 @@
     src: url('../fonts/dogicapixelbold.ttf') format('truetype');
 }
 
+
 /* Estilos globales */
 body {
-    background-color: #0D0D0D;
-    color: #F2836B; /* Light orange for general text */
-    font-family: 'Roboto', sans-serif;
+    background-color: #f4f1e3;color: #F2836B; /* Light orange for general text */font-family: 'Roboto', sans-serif;
 }
 
 .icon {
     width: 50px; /* Adjust as needed */
     height: auto;
 }
+
+
 
 /* Tipografía */
 h1, h2 {
@@ -201,67 +202,7 @@ footer {
 }
 
 /* Paginado */
-#lore-content {
-    background-image: url('../img/PergaminoFondo.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    padding: 40px; /* Padding general aumentado (el doble) */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    line-height: 1.8;
-  
-    width: 100%; /* El contenedor ocupa todo el espacio disponible */
-    max-width: 1000px; /* Límite máximo de ancho */
-    height: 500px; /* Altura fija para el contenedor */
-    margin: 0 auto; /* Centra el contenedor */
-    
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
-    color: #000; /* Color del texto negro */
-  
-    text-align: left; /* Centra el texto */
-    padding-left: 120px;  /* Aumentado a 100px para más espacio a la izquierda */
-    padding-right: 100px; /* Aumentado a 100px para más espacio a la derecha */
-    padding-top: 80px;   /* Aumentado a 80px para más espacio superior */
-    padding-bottom: 80px; /* Aumentado a 80px para más espacio inferior */
-    overflow-y: auto; /* Permite que el contenido sea desplazable si es más largo que el contenedor */
-  }
-  
-  .lore-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 15px;
-  }
-  
-  .lore-controls button {
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .lore-controls button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
-  
-  .lore-controls button:not(:disabled) {
-    background-color: #007bff;
-    color: #ffffff;
-    transition: background-color 0.3s;
-  }
-  
-  .lore-controls button:not(:disabled):hover {
-    background-color: #0056b3;
-  }
-  
-  #lore-page-number {
-    font-size: 14px;
-    font-weight: bold;
-  }
+
   
 /* Estilos para la descarga integrada */
 .download-section {
@@ -286,3 +227,19 @@ footer {
 .discord-info .btn-danger:hover {
     background-color: #BF3952;
 }
+
+
+
+.txt{font-family: 'DogiCaPixel', sans-serif; font-size: 1.2rem; color: #fff; margin-right: 20px; text-decoration: none;}
+.txt:hover a{ color: #F2836B;}
+.marginNav{margin-bottom: 10vh;}
+.bg-img{ position: fixed; background: url('../img/background.jpg') no-repeat;  background-size: cover;filter: blur(8px); top: 0; left: 0; width: 100%; height: 100%;z-index: -1;}
+.icon-nav{display: inline-block; background-color: rgba(0, 0, 0, 0.1); border-radius: 50%; padding: 10px;}
+
+
+.diario {width: 80%; max-width: 900px; margin: 50px auto; padding: 20px; background-color: #fff!important; border-radius: 10px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); border: 1px solid #d3b59d; position: relative;}
+.historia {margin-bottom: 40px;font-size: 1.2em;line-height: 1.6;color: #4f4f4f;text-align: justify;}
+.fecha { font-family: 'Courier Prime', monospace; font-weight: bold; color: #7a5c42; text-align: right; margin-bottom: 10px;}
+.contenido { font-family: 'Courier Prime', monospace; font-size: 1.1em;color: #3a2f29; padding-left: 20px; padding-right: 20px;}
+.diario:before { content: ""; position: absolute;top: 20px;left: 20px;right: 20px;bottom: 20px;border: 2px dashed #6c4f3d;pointer-events: none;}
+

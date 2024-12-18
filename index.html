@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Last Bastion &copy;</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="./img/LastBastion_Icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #BF3952;">
-        <a class="navbar-brand" href="#">
-            <img src="./img/LastBastion_Icon.png" alt="Game Icon" class="icon">
-        </a>
-        <div id="clock" class="ml-auto text-white"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center align-items-center fixed-top" style="background-color: #BF3952;">
+        <div class="col-4 d-flex  align-items-center">
+          <div id="clock" class="text-white"></div>
+        </div>
+        <div class="col-2 text-center">
+          <a class="navbar-brand" href="#">
+            <div class="icon-nav">
+              <img src="./img/LastBastion_Icon.png" alt="Game Icon" class="icon">
+            </div>
+          </a>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <a href="./index.html" class="txt">Home</a>
+            <a href="./story.html" class="txt">Historia</a>
+            <a href="./roadmap.html" class="txt">Roadmap</a>
+        </div>
     </nav>
 
     <header class="hero">
@@ -24,24 +35,12 @@
         </div>
     </header>
 
-    <section id="about" class="py-5 bg-light text-center">
-        <div class="container">
-            <h2 class="custom-title">Sobre el Juego</h2>
-            <p>Embárcate en una aventura épica en un mundo pixelado lleno de magia, misterios, y enemigos formidables. Construye tu fortaleza, explora islas desoladas, y forja alianzas en un entorno helado.</p>
-            <p>En *Last Bastion*, cada decisión importa. ¿Serás capaz de sobrevivir y prosperar en un mundo en constante cambio?</p>
-            
-            <!-- Hacer Indroducción del lore -->
-            <div id="lore-pagination">
-                <div id="lore-content"></div>
-                <div class="lore-controls">
-                  <button id="lore-prev" disabled>Anterior</button>
-                  <span id="lore-page-number">Página 1</span>
-                  <button id="lore-next">Siguiente</button>
-                </div>
-              </div>
-              
-        </div>
-    </section>    
+    <div class="container">
+        <h2 class="custom-title">Sobre el Juego</h2>
+        <p>Embárcate en una aventura épica en un mundo pixelado lleno de magia, misterios, y enemigos formidables. Construye tu fortaleza, explora islas desoladas, y forja alianzas en un entorno helado.</p>
+        <p>En *Last Bastion*, cada decisión importa. ¿Serás capaz de sobrevivir y prosperar en un mundo en constante cambio?</p>
+    </div>
+    <!-- lore -->
 
     <section id="features" class="py-5">
         <div class="container text-center">
@@ -50,10 +49,7 @@
                 <li>✔ Construcción y personalización de tu isla</li>
                 <li>✔ Batallas estratégicas en tiempo real</li>
                 <li>✔ Un lore profundo y envolvente</li>
-                <li>✔ Gráficos retro en estilo pixel art</li>
-                <li>✔ Comunidad activa con eventos y desafíos</li>
             </ul>
-            <p class="mt-4">¡Estamos emocionados de traer esta experiencia única al mundo gamer! Mantente al tanto para más actualizaciones.</p>
             
             <div id="Mecanica-container">
                     <h2 class="custom-title" id="Mecanica-title">Mecanicas del Juego</h2>
@@ -101,6 +97,11 @@
             
         </div>
     </section>
+
+    <div class="container">
+        <h2 class="custom-title text-center my-5">Roadmap</h2>
+
+    </div>
 
     <section id="community" class="bg-dark text-white py-5 text-center">
         <div class="container">
