@@ -37,6 +37,7 @@ h1, h2 {
     align-items: center; /* Centrar contenido verticalmente */
     justify-content: center; /* Centrar contenido horizontalmente */
     position: relative;
+    margin-top: 9vh;
 }
 
 
@@ -137,18 +138,14 @@ footer {
 
 #Mecanica-container {
     padding-top: 4%;
+    margin-bottom: 30px;
 }
 
 #Mecanica-title {
     padding-bottom: 3%;
 }
 
-.mecanica-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
+.mecanica-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; gap: 20px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
 
 .mecanica-text {
     flex: 1;
@@ -170,24 +167,22 @@ footer {
     color: #a7a3a3;
 }
 
-.mecanica-img {
-    flex: 1;
-    text-align: center; /* Centra horizontalmente los elementos internos */
-}
+.mecanica-img { flex: 1; text-align: center;}
 
 .mecanica-img img {
-    max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
-    height: auto; /* Mantiene la proporción de las imágenes */
-    margin: 0 auto; /* Centra las imágenes */
-    display: block; /* Asegura que las imágenes se comporten como elementos de bloque */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .mecanica-img video {
-    max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
-    height: auto; /* Mantiene la proporción de las imágenes */
-    margin: 0 auto; /* Centra las imágenes */
-    display: block; /* Asegura que las imágenes se comporten como elementos de bloque */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
+
 
 /* Animaciones */
 @keyframes pulse {
@@ -229,7 +224,6 @@ footer {
 }
 
 
-
 .txt{font-family: 'DogiCaPixel', sans-serif; font-size: 1.2rem; color: #fff; margin-right: 20px; text-decoration: none;}
 .txt-link:hover { color: #F2836B!important;}
 .marginNav{margin-bottom: 10vh;}
@@ -247,4 +241,6 @@ footer {
 .accordion-button.collapsed { background-color: transparent !important; color: #333 !important; border: none !important; }
 .accordion-button::after { color: #333 !important; }
 .accordion-button:not(.collapsed)::after { color: #333 !important; }
-  
+.slick-slide img {width: 100%; height: auto; object-fit: cover; border-radius: 10px;}
+
+
