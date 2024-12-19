@@ -243,4 +243,4 @@ footer {
 .accordion-button:not(.collapsed)::after { color: #333 !important; }
 .slick-slide img {width: 100%; height: auto; object-fit: cover; border-radius: 10px;}
 
-
+.community{ background-color: rgb(33, 37, 41, 0.9)}
